@@ -75,7 +75,7 @@ const ContactPage = () => {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-800 p-3 rounded-full hover:bg-[#72b626] transition-colors duration-300"
+          className="bg-gray-400 p-3 rounded-full hover:bg-[#72b626] transition-colors duration-300"
         >
           <span className="sr-only">{social.name}</span>
           <div className="w-5 h-5 text-white">{social.icon}</div>
