@@ -17,7 +17,7 @@ const AboutMe = () => {
     nationality: "Pakistani",
     WebDeveloper: "Available",
     phone: "03212167055",
-    email: "amiranas761@mail.com",
+    email: "anasparacha85@mail.com",
     languages: "Urdu, English"
   };
 
