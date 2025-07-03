@@ -31,14 +31,15 @@ const HomePage = () => {
       <div className="container mx-0 flex flex-col lg:flex-row items-center justify-between gap-8 py-12">
         {/* Left Side: Image */}
         <div 
-          className="flex-1 w-full lg:w-1/2 px-4 sm:px-6 lg:px-8" 
-          data-aos="zoom-out-left"
+          className="flex-1 w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mix-blend-screen" 
+          data-aos="zoom-out-right"
+           data-aos-duration="1000"
         >
           <div className="relative">
             <img
               src={dark}
               alt="Anas Paracha"
-              className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover rounded-lg shadow-lg -mt-8 sm:-mt-12 lg:-mt-[80px]"
+              className="w-full h-[300px]  sm:h-[400px] lg:h-[600px] object-cover rounded-lg shadow-lg -mt-8 sm:-mt-12 lg:-mt-[80px]"
             />
           </div>
         </div>
