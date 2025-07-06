@@ -39,7 +39,7 @@ const Sidebar = () => {
           <div
             key={index}
             className={`flex items-center space-x-2 p-2 rounded-full transition-all duration-300 ${
-              location.pathname === item.path ? "bg-[#72b626]" : "bg-gray-300"
+              location.pathname === item.path ? "theme-bg" : "bg-gray-300"
             } ${activeIndex === index ? "w-32" : "w-12"} `}
             onClick={() => handleItemClick(index)}
           >

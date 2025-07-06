@@ -28,6 +28,13 @@
 .bar3 {
   animation-delay: 2s;
 }
+.theme-text{
+  color: #23dbdb;
+ 
+}
+.theme-bg{
+  background-color: #23dbdb;
+}
 
 @keyframes drop {
   0% {

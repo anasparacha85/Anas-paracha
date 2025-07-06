@@ -1,7 +1,7 @@
 import React from 'react'
 import { ExternalLink } from 'lucide-react';
 const ProjectCard = ({ project }) => (
-    <div className="bg-gray-200 backdrop-blur-sm border border-gray-300 hover:shadow-2xl hover:shadow-[#72b626] hover:border-[#72b626] rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:scale-105">
+    <div className="bg-gray-200 backdrop-blur-sm border border-gray-300 hover:shadow-2xl hover:shadow-[#23dbdb] hover:border-[#23dbdb] rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:scale-105">
       <img 
         src={project.image} 
         alt={project.title} 
@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => (
         
           <a 
             href={project.liveLink}
-            className="flex items-center gap-2 text-gray-400 hover:text-[#72b626] transition-colors"
+            className="flex items-center gap-2 text-gray-400 hover:theme-text transition-colors"
             target='blank'
           >
             <ExternalLink size={20} />

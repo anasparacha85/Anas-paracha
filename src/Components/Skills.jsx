@@ -41,7 +41,7 @@ const SkillCircle = ({ percentage, name }) => {
           cx="60"
           cy="60"
           r={radius}
-          className="stroke-[#72b626] fill-none"
+          className="stroke-[#23dbdb] fill-none"
           strokeWidth="10"
           strokeDasharray={circumference}
           strokeDashoffset={dashOffset}
@@ -49,7 +49,7 @@ const SkillCircle = ({ percentage, name }) => {
         />
       </svg>
       {/* Percentage */}
-      <span className="absolute text-xl font-bold text-[#72b626] pt-7 ">{percentage}%</span>
+      <span className="absolute text-xl font-bold theme-text pt-7 ">{percentage}%</span>
       {/* Skill Name */}
       <p className="text-gray-500">{name}</p>
     </div>
@@ -65,7 +65,7 @@ const Skills = () => {
     data-aos-easing="linear"
     data-aos-duration="1500">
           <h2 className="text-center text-4xl font-bold mb-5 mt-32 text-gray-500">
-        MY <span className="text-[#72b626]">SKILLS</span>
+        MY <span className="theme-text">SKILLS</span>
       </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  py-10 px-6">
         

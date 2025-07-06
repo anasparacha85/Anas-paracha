@@ -105,7 +105,7 @@ useEffect(()=>{
           <h1 className="text-4xl md:text-[100px] font-bold opacity-10">PORTFOLIO</h1>
           <div className="absolute top-[0px] transform translate-x-[95px] lg:translate-x-[400px]">
             <h2 className="text-2xl md:text-6xl font-extrabold text-gray-500">
-              MY <span className="text-[#72b626]">PROJECTS</span>
+              MY <span className="theme-text">PROJECTS</span>
             </h2>
           </div>
         </div>
@@ -138,13 +138,13 @@ useEffect(()=>{
                 onClick={prevSlide}
                 className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800/50 p-2 rounded-full"
               >
-                <ChevronLeft className="text-[#72b626]" />
+                <ChevronLeft className="theme-text" />
               </button>
               <button 
                 onClick={nextSlide}
                 className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800/50 p-2 rounded-full"
               >
-                <ChevronRight className="text-[#72b626]" />
+                <ChevronRight className="theme-text" />
               </button>
     
               {/* Dots Indicator */}
@@ -154,7 +154,7 @@ useEffect(()=>{
                     key={index}
                     onClick={() => setCurrentSlide(index)}
                     className={`w-2 h-2 rounded-full ${
-                      currentSlide === index ? 'bg-[#72b626]' : 'bg-gray-400'
+                      currentSlide === index ? 'theme-bg' : 'bg-gray-400'
                     }`}
                   />
                 ))}

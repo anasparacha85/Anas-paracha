@@ -67,7 +67,7 @@ const Timeline = () => {
         {data.map((item, index) => (
           <div key={index} className="relative">
             <div
-              className={`absolute w-10 h-10 rounded-full bg-[#72b626] flex items-center justify-center ${
+              className={`absolute w-10 h-10 rounded-full theme-bg flex items-center justify-center ${
                 item.icon === "work" ? "top-2" : "top-0"
               }`}
             >
@@ -81,7 +81,7 @@ const Timeline = () => {
               </span>
               <h3 className="text-xl font-bold text-gray-500">
                 {item.role}{" "}
-                <span className="text-[#72b626]">– {item.company}</span>
+                <span className="theme-text">– {item.company}</span>
               </h3>
               <p className="text-gray-400 mt-2">{item.description}</p>
             </div>

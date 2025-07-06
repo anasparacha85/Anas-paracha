@@ -70,7 +70,7 @@ My approach goes beyond just writing code—I focus on optimizing performance, i
               <span className="relative z-10 ml-2">
                 <FaArrowRight />
               </span>
-              <span className="absolute inset-0 bg-[#72b626] transition-all duration-300 ease-in-out transform translate-x-full group-hover:translate-x-0"></span>
+              <span className="absolute inset-0 theme-bg transition-all duration-300 ease-in-out transform translate-x-full group-hover:translate-x-0"></span>
             </button>
           </div>
         </div>

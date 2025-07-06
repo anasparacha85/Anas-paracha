@@ -24,7 +24,7 @@ const ContactPage = () => {
           <h1 className="text-4xl md:text-[100px] font-bold opacity-10">CONTACT</h1>
           <div className="absolute top-[0px] transform translate-x-[95px] lg:translate-x-[350px]">
             <h2 className="text-2xl md:text-6xl font-extrabold text-gray-500">
-              GET IN <span className="text-[#72b626]">TOUCH</span>
+              GET IN <span className="theme-text">TOUCH</span>
             </h2>
           </div>
         </div>
@@ -42,7 +42,7 @@ const ContactPage = () => {
             {/* Contact Info */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="bg-[#72b626] p-3 rounded">
+                <div className="theme-bg p-3 rounded">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
@@ -55,7 +55,7 @@ const ContactPage = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="bg-[#72b626] p-3 rounded">
+                <div className="theme-bg p-3 rounded">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
@@ -75,7 +75,7 @@ const ContactPage = () => {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gray-400 p-3 rounded-full hover:bg-[#72b626] transition-colors duration-300"
+          className="bg-gray-400 p-3 rounded-full hover:theme-bg transition-colors duration-300"
         >
           <span className="sr-only">{social.name}</span>
           <div className="w-5 h-5 text-white">{social.icon}</div>
@@ -90,26 +90,26 @@ const ContactPage = () => {
               <input
                 type="text"
                 placeholder="YOUR NAME"
-                className="bg-gray-100 rounded p-3 w-full text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#72b626]"
+                className="bg-gray-100 rounded p-3 w-full text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#23dbdb]"
               />
               <input
                 type="email"
                 placeholder="YOUR EMAIL"
-                className="bg-gray-100 rounded p-3 w-full text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#72b626]"
+                className="bg-gray-100 rounded p-3 w-full text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#23dbdb]"
               />
               <input
                 type="text"
                 placeholder="YOUR SUBJECT"
-                className="bg-gray-100 rounded p-3 w-full text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#72b626]"
+                className="bg-gray-100 rounded p-3 w-full text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#23dbdb]"
               />
             </div>
             <textarea
               placeholder="YOUR MESSAGE"
               rows={6}
-              className="bg-gray-100 rounded p-3 text-gray-500 w-full focus:outline-none focus:ring-2 focus:ring-[#72b626]"
+              className="bg-gray-100 rounded p-3 text-gray-500 w-full focus:outline-none focus:ring-2 focus:ring-[#23dbdb]"
             />
             <div className="flex justify-end">
-              <button className="bg-transparent border border-[#72b626] text-gray-500 px-6 py-3 rounded flex items-center space-x-2 hover:bg-[#72b626] hover:text-black transition-colors duration-300">
+              <button className="bg-transparent border border-[#23dbdb] text-gray-500 px-6 py-3 rounded flex items-center space-x-2 hover:bg-[#23dbdb] hover:text-black transition-colors duration-300">
                 <span>SEND MESSAGE</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
