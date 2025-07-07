@@ -29,12 +29,15 @@
   animation-delay: 2s;
 }
 .theme-text{
-  color: #23dbdb;
+  color: #16b2b2;
  
 }
 .theme-bg{
-  background-color: #23dbdb;
+  background-color: #16b2b2;
+  
 }
+
+
 
 @keyframes drop {
   0% {
