@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaUser, FaBriefcase, FaEnvelope, FaCommentDots, FaBars, FaTimes } from "react-icons/fa";
 
 const Sidebar = () => {
@@ -20,8 +20,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div >
-    <div className="fixed top-4 right-4 z-50 bg-slate-300">
+    <div className="fixed top-4 right-4 z-50">
       {/* Hamburger Button for Small Screens */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,12 +50,7 @@ const Sidebar = () => {
           </div>
         ))}
       </div>
-    
     </div>
-      <main className="">
-       <Outlet/>
-      </main>
-      </div>
   );
 };
 
