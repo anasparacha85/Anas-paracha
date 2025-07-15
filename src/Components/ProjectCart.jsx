@@ -1,7 +1,7 @@
 import React from 'react'
 import { ExternalLink } from 'lucide-react';
 const ProjectCard = ({ project }) => (
-    <div className="bg-gray-200 backdrop-blur-sm border border-gray-300 hover:shadow-2xl hover:shadow-[#23dbdb] hover:border-[#23dbdb] rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:scale-105">
+    <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:shadow-2xl hover:shadow-yellow-400 hover:border-yellow-300 rounded-lg overflow-hidden transition-all duration-300 hover:transform hover:scale-105">
       <img 
         src={project.image} 
         alt={project.title} 
@@ -12,15 +12,15 @@ const ProjectCard = ({ project }) => (
         <div className="flex justify-between items-start mb-4">
           <div>
            
-            <h3 className="text-xl font-bold text-gray-500 mt-1">{project.title}</h3>
+            <h3 className="text-xl font-bold text-white mt-1">{project.title}</h3>
           </div>
         </div>
-        <p className="text-gray-500 mb-4">{project.description}</p>
+        <p className="text-gray-300 mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech) => (
             <span 
               key={tech} 
-              className="px-3 py-1 bg-gray-500 rounded-full text-sm text-gray-200"
+              className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-300"
             >
               {tech}
             </span>
@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => (
         
           <a 
             href={project.liveLink}
-            className="flex items-center gap-2 text-gray-400 hover:theme-text transition-colors"
+            className="flex items-center gap-2 text-gray-300 hover:text-yellow-500 transition-colors"
             target='blank'
           >
             <ExternalLink size={20} />

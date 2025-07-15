@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import dark from '../../public/darkavatar.jpg';
 import AboutMe from './AboutMe';
 import  Projects from './Projects'
@@ -15,6 +15,7 @@ import ThreeDropLoader from '../Animation/loadinganimation';
 
 const HomePage = () => {
   const [Loading, setLoading] = useState(false)
+  const navigate=useNavigate()
 
   useEffect(() => {
     Aos.init();
@@ -31,21 +32,21 @@ const HomePage = () => {
       <div className="container mx-0 flex flex-col lg:flex-row items-center justify-between gap-8 py-12">
         {/* Left Side: Image */}
         <div 
-          className="flex-1 w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mix-blend-screen" 
+          className="flex-1 w-full lg:w-1/2 px-4 sm:px-6 lg:px-8" 
           data-aos="zoom-out-right"
-           data-aos-duration="1000"
-        >
+          
+  data-aos-duration="1500">
           <div className="relative">
             <img
               src={dark}
               alt="Anas Paracha"
-              className="w-full h-[300px]  sm:h-[400px] lg:h-[600px] object-cover rounded-lg shadow-lg -mt-8 sm:-mt-12 lg:-mt-[80px]"
+              className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover rounded-lg shadow-lg -mt-8 sm:-mt-12 lg:-mt-[80px]"
             />
           </div>
         </div>
 
         {/* Right Side: Content */}
-        <div className="flex-1 w-full lg:w-1/2 px-1  lg:px-8 text-center lg:text-left text-gray-500" data-aos="fade-left"
+        <div className="flex-1 w-full lg:w-1/2 px-1  lg:px-8 text-center lg:text-left text-white" data-aos="fade-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -65,12 +66,12 @@ My approach goes beyond just writing code—I focus on optimizing performance, i
 </p>
         
           <div className="mt-6 flex justify-center lg:justify-start">
-            <button className="px-6 py-3 text-gray-500 font-medium text-lg rounded-[30px] shadow-md border-2 border-solid border-white flex items-center relative overflow-hidden group">
-              <span className="relative z-10 "><Link to='/about'>More About Me</Link></span>
+            <button onClick={()=>navigate('/about')} className="px-6 py-3 text-white font-medium text-lg rounded-[30px] shadow-md border-2 border-solid border-white flex items-center relative overflow-hidden group">
+              <span className="relative z-10 ">More About Me</span>
               <span className="relative z-10 ml-2">
                 <FaArrowRight />
               </span>
-              <span className="absolute inset-0 theme-bg transition-all duration-300 ease-in-out transform translate-x-full group-hover:translate-x-0"></span>
+              <span className="absolute inset-0 bg-yellow-500 transition-all duration-300 ease-in-out transform translate-x-full group-hover:translate-x-0"></span>
             </button>
           </div>
         </div>

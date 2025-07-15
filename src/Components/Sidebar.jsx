@@ -24,7 +24,7 @@ const Sidebar = () => {
       {/* Hamburger Button for Small Screens */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="flex items-center justify-center w-10 h-10 bg-gray-300 text-gray-700 rounded-full md:hidden"
+        className="flex items-center justify-center w-10 h-10 bg-gray-700 text-white rounded-full md:hidden"
       >
         {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
       </button>
@@ -39,7 +39,7 @@ const Sidebar = () => {
           <div
             key={index}
             className={`flex items-center space-x-2 p-2 rounded-full transition-all duration-300 ${
-              location.pathname === item.path ? "theme-bg" : "bg-gray-300"
+              location.pathname === item.path ? "bg-yellow-500" : "bg-gray-700"
             } ${activeIndex === index ? "w-32" : "w-12"} `}
             onClick={() => handleItemClick(index)}
           >

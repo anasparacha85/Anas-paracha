@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Download } from 'lucide-react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import Skills from './Skills';
 import Timeline from './Exerience';
-import ThreeDropLoader from '../Animation/loadinganimation';
 const AboutMe = () => {
-  const [Loading, setLoading] = useState(false)
     useEffect(()=>{
         Aos.init()
     },[])
@@ -17,7 +15,7 @@ const AboutMe = () => {
     nationality: "Pakistani",
     WebDeveloper: "Available",
     phone: "03212167055",
-    email: "anasparacha85@mail.com",
+    email: "amiranas761@mail.com",
     languages: "Urdu, English"
   };
 
@@ -30,7 +28,6 @@ const AboutMe = () => {
   
 
   return (
-    <> 
     <div className="min-h-screen  text-white p-4 md:p-8" data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1500">
@@ -39,8 +36,8 @@ const AboutMe = () => {
         <div className="mb-32 relative">
           <h1 className="text-4xl md:text-[100px] font-bold opacity-10">RESUME</h1>
           <div className="absolute top-[0px] transform translate-x-[95px] lg:translate-x-[420px]">
-            <h2 className="text-2xl md:text-6xl font-extrabold text-gray-500">
-              ABOUT <span className="theme-text">ME</span>
+            <h2 className="text-2xl md:text-6xl font-extrabold">
+              ABOUT <span className="text-yellow-500">ME</span>
             </h2>
           </div>
         </div>
@@ -50,14 +47,14 @@ const AboutMe = () => {
           <div className="space-y-6" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-            <h3 className="text-2xl font-bold mb-6 theme-text">PERSONAL INFOS</h3>
+            <h3 className="text-2xl font-bold mb-6 text-yellow-500">PERSONAL INFOS</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {Object.entries(personalInfo).map(([key, value]) => (
                 <div key={key} className="space-y-1">
                   <span className="text-gray-400 capitalize">
                     {key.replace(/([A-Z])/g, ' $1').trim()} :{' '}
                   </span>
-                  <span className="text-gray-500">{value}</span>
+                  <span className="text-white">{value}</span>
                 </div>
               ))}
             </div>
@@ -72,12 +69,12 @@ const AboutMe = () => {
             {stats.map((stat, index) => (
               <div 
                 key={index} 
-                className="border border-gray-400 p-6  backdrop-blur-sm"
+                className="border border-gray-800 p-6 bg-gray-800/50 backdrop-blur-sm"
               >
-                <div className="theme-text text-4xl font-bold mb-2">
+                <div className="text-yellow-500 text-4xl font-bold mb-2">
                   {stat.number}
                 </div>
-                <div className="text-sm text-gray-500">
+                <div className="text-sm text-gray-300">
                   {stat.label}
                 </div>
               </div>
@@ -95,7 +92,6 @@ const AboutMe = () => {
       </div>
 <Timeline/>
     </div>
-    </>
   );
 };
 

@@ -2,10 +2,7 @@ import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-import { useState } from "react";
-import ThreeDropLoader from "../Animation/loadinganimation";
 const Timeline = () => {
-  const [Loading, setLoading] = useState(false)
      useEffect(()=>{
             Aos.init()
         },[])
@@ -52,36 +49,33 @@ const Timeline = () => {
    
    
   ];
-  
 
   return (
-    <>
-   
     <div className=" text-white py-10 px-6 mt-16"data-aos="flip-up"
     
     data-aos-duration="1500" >
-      <h2 className="text-center text-3xl font-bold mb-16 text-gray-500">
+      <h2 className="text-center text-3xl font-bold mb-16">
         EXPERIENCE & EDUCATION
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         {data.map((item, index) => (
           <div key={index} className="relative">
             <div
-              className={`absolute w-10 h-10 rounded-full theme-bg flex items-center justify-center ${
+              className={`absolute w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center ${
                 item.icon === "work" ? "top-2" : "top-0"
               }`}
             >
-              <span className="text-gray-500 text-xl">
+              <span className="text-white text-xl">
                 {item.icon === "work" ? "👜" : "🎓"}
               </span>
             </div>
             <div className="ml-12">
-              <span className="block text-sm text-gray-400 mb-2">
+              <span className="block text-sm text-gray-300 mb-2">
                 {item.year}
               </span>
-              <h3 className="text-xl font-bold text-gray-500">
+              <h3 className="text-xl font-bold">
                 {item.role}{" "}
-                <span className="theme-text">– {item.company}</span>
+                <span className="text-yellow-500">– {item.company}</span>
               </h3>
               <p className="text-gray-400 mt-2">{item.description}</p>
             </div>
@@ -89,7 +83,6 @@ const Timeline = () => {
         ))}
       </div>
     </div>
-    </>
   );
 };
 

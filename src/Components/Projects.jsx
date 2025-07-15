@@ -96,7 +96,7 @@ useEffect(()=>{
     };
   
     return (
-        <div className="min-h-screen  text-white p-4 md:p-8" data-aos="flip-down"
+        <div className="min-h-screen overflow-x-hidden  text-white p-4 md:p-8" data-aos="flip-down"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1500">
           <div className="max-w-6xl mx-auto">
@@ -104,8 +104,8 @@ useEffect(()=>{
             <div className="mb-32 relative">
           <h1 className="text-4xl md:text-[100px] font-bold opacity-10">PORTFOLIO</h1>
           <div className="absolute top-[0px] transform translate-x-[95px] lg:translate-x-[400px]">
-            <h2 className="text-2xl md:text-6xl font-extrabold text-gray-500">
-              MY <span className="theme-text">PROJECTS</span>
+            <h2 className="text-2xl md:text-6xl font-extrabold">
+              MY <span className="text-yellow-500">PROJECTS</span>
             </h2>
           </div>
         </div>
@@ -138,13 +138,13 @@ useEffect(()=>{
                 onClick={prevSlide}
                 className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800/50 p-2 rounded-full"
               >
-                <ChevronLeft className="theme-text" />
+                <ChevronLeft className="text-yellow-500" />
               </button>
               <button 
                 onClick={nextSlide}
                 className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800/50 p-2 rounded-full"
               >
-                <ChevronRight className="theme-text" />
+                <ChevronRight className="text-yellow-500" />
               </button>
     
               {/* Dots Indicator */}
@@ -154,7 +154,7 @@ useEffect(()=>{
                     key={index}
                     onClick={() => setCurrentSlide(index)}
                     className={`w-2 h-2 rounded-full ${
-                      currentSlide === index ? 'theme-bg' : 'bg-gray-400'
+                      currentSlide === index ? 'bg-yellow-500' : 'bg-gray-600'
                     }`}
                   />
                 ))}
