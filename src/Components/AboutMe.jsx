@@ -4,6 +4,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import Skills from './Skills';
 import Timeline from './Exerience';
+import AnasParachaResume from '../../public/AnasParachaResume.pdf'
 const AboutMe = () => {
     useEffect(()=>{
         Aos.init()
@@ -57,6 +58,7 @@ const AboutMe = () => {
                   <span className="text-white">{value}</span>
                 </div>
               ))}
+            <a href={AnasParachaResume} download={true} target='_blank' > <button className='px-3 py-2 flex justify-around hover:bg-yellow-500 gap-3 w-[250px] rounded-[30px] text-[18px] font-semibold border-white border-2'>Download resume <Download/></button></a> 
             </div>
             
            
