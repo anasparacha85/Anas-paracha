@@ -58,7 +58,7 @@ const AboutMe = () => {
                   <span className="text-white">{value}</span>
                 </div>
               ))}
-            <a href={AnasParachaResume} download={true} target='_blank' > <button className='px-3 py-2 flex justify-around hover:bg-yellow-500 gap-3 w-[250px] rounded-[30px] text-[18px] font-semibold border-white border-2'>Download resume <Download/></button></a> 
+            <a href={AnasParachaResume} download={true} target='_blank' > <div className="flex justify-center"> <button className="bg-transparent border border-amber-400 text-white px-6 py-3 rounded flex items-center space-x-2 hover:bg-amber-400 hover:text-black transition-colors duration-300"><span> Download resume</span> <Download/></button></div></a> 
             </div>
             
            
