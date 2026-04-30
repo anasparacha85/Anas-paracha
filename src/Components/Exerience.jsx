@@ -7,13 +7,30 @@ const Timeline = () => {
             Aos.init()
         },[])
   const data = [
+       {
+   
+      year: "august 2025 -present",
+      role: "Junior Software Engineer",
+      company: "Devsynth Innovations",
+      description:
+        "Working as a Junior Software Engineer at Devsynth Innovations, developing and maintaining scalable full
+stack web applications using the MERN stack. Contributing to both backend and frontend development, including 
+real-time features using WebSockets, Redis-based caching and Pub/Sub systems, admin dashboards, and 
+charging station management modules, ",
+        
+      icon: "work",
+    },
       {
    
-      year: "april 2025 -present",
-      role: "Full Stack Developer  (Internship)",
-      company: "IOTFIY Solutions",
+      year: "may 2025 -present",
+      role: "Full Stack Developer",
+      company: "Ababeel(UAE)",
       description:
-        "Currently Working as a Junior Full  Stack Developer Intern at IOTFIY Solutions where I am Contributing towards Exciting Projects by Developing Advanced Server Side as well as Client Side Features using MERN stack , and Nestjs..",
+        "Working remotely as a Junior Full Stack Developer with the UAE-based company Ababeel, actively 
+contributing to full-stack development by building and maintaining MERN-based applications. Involved in 
+developing scalable web features such as AI-powered resume builders, resume analyzers, one-way video 
+interview systems, and recruitment workflow tools, focusing on performance, clean architecture, and modern 
+user experiences..",
         
       icon: "work",
     },
