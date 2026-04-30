@@ -13,6 +13,8 @@ import Aos from 'aos';
 import Image from '../../public/image.png'
 import 'aos/dist/aos.css'
 import AmazonImage from '../../public/Amazonpic.png'
+import Careerflix from '../../public/Careerflix.png'
+import NextGen from '../../public/NextGenCareer.png'
  
 const Projects = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,6 +25,17 @@ useEffect(()=>{
     const projects = [
        {
         id: 1,
+        title: "CareerFlix",
+        category: "Web Development",
+        image: Careerflix,
+        description: "CareerFlix is an online automated recruitment platform which helps employers find the right candidates. It offers features such as AI-powered resume analysis, one-way video interviews, and a comprehensive recruitment workflow management system to streamline the hiring process.",
+        technologies: ["Express.js","Node.js","Next.js","Claude AI", "Tailwind","Framer motion","stripe" ],
+       
+        liveLink: "https://careerflix.com/"
+
+      },
+       {
+        id: 2,
         title: "SkillTern Webapp",
         category: "Web Development",
         image: Image,
@@ -32,18 +45,18 @@ useEffect(()=>{
         liveLink: "https://skilltern.vercel.app/"
 
       },
-
-      {
-        id: 2,
-        title: "Amazon Real State Webapp ",
-        category: "Web Development",
-        image: AmazonImage,
-        description: "it is an real state application where you can book houses for buy ,for rent etc.",
-        technologies: ["php","Laravel","React js", "Tailwind","AOS" ],
+        {
+        id: 9,
+        title: "NextGen Career",
+        category: "Data Visualization",
+        image: NextGen,
+        description: "NextGen Career is an AI Powered Career Guidance Platform that Generates personalized Career RoadMaps,Market Skills Analysis,Mock Interviews,Resume Analyzers .",
+        technologies: ["React",,"Node.js","Express.js","Open AI Api", "AOS", "Tailwind"],
+        githubLink: "https://github.com",
        
-        liveLink: "https://amazon-real-estate.edunation.pk/"
-
       },
+
+     
       {
         id: 3,
         title: "Creative Agency",
@@ -56,7 +69,7 @@ useEffect(()=>{
       },
       {
         id: 5,
-        title: "Wearhub",
+        title: "WearHub",
         category: "Web Development",
         image:Wearhub,
         description: "Full-stack e-commerce Website Where Users Can order products in realtime  ",
