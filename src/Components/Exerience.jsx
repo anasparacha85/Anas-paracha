@@ -13,10 +13,10 @@ const Timeline = () => {
       role: "Junior Software Engineer",
       company: "Devsynth Innovations",
       description:
-        "Working as a Junior Software Engineer at Devsynth Innovations, developing and maintaining scalable full
+        `Working as a Junior Software Engineer at Devsynth Innovations, developing and maintaining scalable full
 stack web applications using the MERN stack. Contributing to both backend and frontend development, including 
 real-time features using WebSockets, Redis-based caching and Pub/Sub systems, admin dashboards, and 
-charging station management modules, ",
+charging station management modules.`,
         
       icon: "work",
     },
@@ -26,11 +26,11 @@ charging station management modules, ",
       role: "Full Stack Developer",
       company: "Ababeel(UAE)",
       description:
-        "Working remotely as a Junior Full Stack Developer with the UAE-based company Ababeel, actively 
+        `Working remotely as a Junior Full Stack Developer with the UAE-based company Ababeel, actively 
 contributing to full-stack development by building and maintaining MERN-based applications. Involved in 
 developing scalable web features such as AI-powered resume builders, resume analyzers, one-way video 
 interview systems, and recruitment workflow tools, focusing on performance, clean architecture, and modern 
-user experiences..",
+user experiences.`,
         
       icon: "work",
     },
